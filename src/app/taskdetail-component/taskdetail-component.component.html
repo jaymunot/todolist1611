@@ -1,0 +1,36 @@
+<div class="card">
+    <div class="card-body">
+      <div class="row">
+        <button class="button-x" (click)="backbutton()">Back To List</button>
+      </div>
+      <div class="row">
+        <span>Details</span>
+      </div>
+      <div class="row main-row" >
+        <table class="details-table">
+          <thead class="thead-deatils">
+            <tr>
+              <th>User Name</th>
+              <th>User Status</th>
+              <th>User Priority</th>
+              <th>User Due Date</th>
+            </tr>
+          </thead>
+          <tbody class="tbody-details">
+            <tr>
+              <td class="td-details">{{data.name}}</td>
+              <td class="td-details">{{data.status}}</td>
+              <td class="td-details">{{data.priority}}</td>
+              <td class="td-details">{{data.duedate}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <button class="button-x" (click)="editbutton()">Create New Task</button>
+  </div>
+  
+  
